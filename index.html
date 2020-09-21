@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <title>Favourite Movie List</title>
+    <script src="./JS/main.js" defer></script>
+</head>
+
+<body>
+    <!-----------------------------OVERLAY SECTION------------------------>
+    <div class="overlay"></div>
+    <header>
+        <div class="header-container">
+            <h1>Favourite Movie List</h1>
+            <button class="addMovie">ADD MOVIE</button>
+        </div>
+    </header>
+    <!------------------------------MAIN SECTION-------------------------->
+    <main>
+        <!------------------------SECTION ONE---------------------------->
+        <section class="section_01">
+            <div class="container part_01">
+                <p>Your Favourite Movie Lists</p>
+            </div>
+            <ul class="addedMovieList"></ul>
+        </section>
+        <!-----------------------SECTION TWO---------------------------->
+        <section class="section_02">
+            <div class="container">
+                <div class="form">
+                    <label for="movieTitle">Movie Title:</label>
+                    <input type="text" name="title" id="movieTitle" placeholder="Movie Title" />
+                    <label for="movieUrl">Movie Image:</label>
+                    <input type="text" name="url" id="movieUrl" placeholder="Movie Url" />
+                    <label for="movieRating">Movie Rating:</label>
+                    <input type="number" name="rating" id="movieRating" step="1" max="5" min="1"
+                        placeholder="Movie Rating" />
+                    <div class="modal_actions">
+                        <button class="btnCancel">Cancel</button>
+                        <button class="btnSubmit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
